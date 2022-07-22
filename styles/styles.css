@@ -134,11 +134,34 @@ img {
   color: var(--accent-text-color);
 }
 
+.mail-contact {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primari-text-color);
+}
+.phone-contact {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primari-text-color);
+}
+.mail-contact:hover,
+.mail-contact:focus,
+.phone-contact:hover,
+.phone-contact:focus {
+  fill: var(--accent-text-color);
+}
+
 /*---main-------------------*/
 /* < !--baner--> */
 .baner {
   background-color: #2f303a;
   padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Baner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .baner-title {
@@ -188,6 +211,12 @@ img {
 
 .content-item {
   width: 270px;
+}
+
+.content-svg {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 .content-subtitle {
@@ -272,6 +301,7 @@ img {
 }
 
 .team-text {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -280,7 +310,69 @@ img {
   color: var(--primari-text-color);
 }
 
-/*---fooret-------------------------------*/
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primari-white-color);
+  fill: var(--primari-text-color);
+}
+.social-svg {
+  width: 20px;
+  height: 20px;
+}
+.team-social-item:focus,
+.team-social-item:hover {
+  background-color: var(--accent-text-color);
+  fill: var(--primari-white-color);
+  cursor: pointer;
+
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.clients-list {
+  display: flex;
+    gap: 30px;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  fill: var(--primari-text-color);
+}
+.clients-logo {
+  width: 106px;
+  height: 60px;
+  
+}
+.clients-item:focus,
+.clients-item:hover {
+  border: 1px solid var(--accent-text-color);
+  fill: var(--accent-text-color);
+  cursor: pointer;
+}
+
+/*---footer-------------------------------*/
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
@@ -319,6 +411,20 @@ address {
 
 .footer-map {
   color: #ffffff;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+}
+.join-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primari-white-color);
 }
 
 /*=====portfolio===============================*/
