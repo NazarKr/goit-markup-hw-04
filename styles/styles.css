@@ -378,6 +378,12 @@ img {
   background-color: #2f303a;
 }
 
+.footer-wraper {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+}
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
@@ -396,6 +402,9 @@ address {
   margin-top: 20px;
 }
 
+.footer-list {
+  margin-top: 20px;
+}
 .footer-item {
   font-style: normal;
   font-weight: 400;
@@ -416,6 +425,7 @@ address {
 .join {
   display: flex;
   flex-direction: column;
+  width: 206px;
 }
 .join-title {
   margin-bottom: 20px;
