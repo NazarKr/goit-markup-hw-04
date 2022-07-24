@@ -135,15 +135,11 @@ img {
 }
 
 .mail-contact {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: var(--primari-text-color);
 }
 
 .phone-contact {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: var(--primari-text-color);
 }
@@ -366,11 +362,6 @@ img {
   border: 1px solid var(--title-text-color);
   border-radius: 4px;
   fill: var(--primari-text-color);
-}
-
-.clients-logo {
-  width: 106px;
-  height: 60px;
 }
 
 .clients-item:focus,
