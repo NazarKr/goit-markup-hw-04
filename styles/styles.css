@@ -154,18 +154,18 @@ img {
 /*---main-------------------*/
 /* < !--baner--> */
 .baner {
-  background-color: #2f303a;
   padding: 200px 0;
+  background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/img/Baner.jpg);
+    url(../img/Baner.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .baner-title {
-  margin: 0 auto;
   width: 696px;
+  margin: 0 auto; 
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -454,6 +454,7 @@ address {
 }
 
 .filter-item {
+  display: i  ;
   margin-right: 8px;
 }
 
