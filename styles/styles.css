@@ -125,11 +125,6 @@ img {
   color: #757575;
 }
 
-.link:hover,
-.link:focus {
-  color: #2196f3;
-}
-
 .navbar-list .current {
   color: var(--accent-text-color);
 }
@@ -141,13 +136,11 @@ img {
 
 .phone-contact {
   margin-right: 10px;
-  fill: var(--primari-text-color);
 }
 
-.mail-contact:hover,
-.mail-contact:focus,
-.phone-contact:hover,
-.phone-contact:focus {
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
 
@@ -328,7 +321,7 @@ img {
   gap: 10px;
 }
 
-.team-social-item {
+.team-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,8 +337,8 @@ img {
   height: 20px;
 }
 
-.team-social-item:focus,
-.team-social-item:hover {
+.team-link:focus,
+.team-link:hover {
   background-color: var(--accent-text-color);
   fill: var(--primari-white-color);
   cursor: pointer;
@@ -367,18 +360,21 @@ img {
 }
 
 .clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid var(--title-text-color);
   border-radius: 4px;
   fill: var(--primari-text-color);
 }
 
-.clients-item:focus,
-.clients-item:hover {
+.clients-link:focus,
+.clients-link:hover {
   border: 1px solid var(--accent-text-color);
   fill: var(--accent-text-color);
   cursor: pointer;
@@ -392,7 +388,7 @@ img {
 
 .footer-wraper {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -451,7 +447,7 @@ address {
   color: var(--primari-white-color);
 }
 
-.join-social-item {
+.join-social-link {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primari-white-color);
 }
@@ -509,10 +505,10 @@ address {
   background: var(--primari-white-color);
 }
 
-.portfolio-work-item:focus,
-.portfolio-work-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-work-link:hover,
+.portfolio-work-link:focus {
+  background-color: green;
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
 }
 
 .portfolio-name {
